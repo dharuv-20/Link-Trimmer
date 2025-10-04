@@ -22,7 +22,9 @@ export default defineConfig([
         sourceType: 'module',
       },
     },
+    extends: ["js/recommended"],
     rules: {
+      // "no-unused-vars": "warn",
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },
